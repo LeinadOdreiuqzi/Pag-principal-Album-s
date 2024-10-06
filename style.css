@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Afacad Flux', sans-serif;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+/* header */
+header {
+    background-color: rgb(198, 100, 97);
+    width: 100%;
+    padding: 25px;
+    text-align: left;
+    font-size: 28px;
+    color: rgb(0, 0, 0);
+}
+
+h1 {
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* nav */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+    background-color: #faab74;
+    max-height: 60px;
+    position: absolute;
+    top: 100px; /* Fija la barra justo después del header */
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #11c1be;
+}
+
+/* main */
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-top: 70px;
+}
+
+h2 {
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 30px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+}
+
+.album-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+}
+
+.album {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 15px; /* Espacio entre álbumes */
+    padding: 15px;
+    transition: transform 0.2s;
+}
+
+.album:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilos para details */
+details {
+    width: 100%;
+    margin-top: 10px;
+}
+
+details summary {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+details summary:hover {
+    color: #11c1be;
+}
+details p {
+    margin: 5px 0;
+    padding-left: 10px;
+}
+
+.album img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.album h3 {
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.album p {
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* footer */
+footer {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    bottom: auto;
+}
